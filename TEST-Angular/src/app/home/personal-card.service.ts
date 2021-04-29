@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {UserInterface} from '../user-interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonalCardService {
-  user: any;
+  user: UserInterface | any;
   constructor(private http: HttpClient) { }
   public getUser(userName: string): any {
     this.http.get('https://api.github.com/users/' + userName).subscribe((response: any) => {

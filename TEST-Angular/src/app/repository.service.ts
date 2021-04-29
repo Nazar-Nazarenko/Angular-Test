@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
+import {UserInterface} from './user-interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RepositoryService {
-  repo: any;
+  repo: UserInterface | any;
   constructor(private http: HttpClient) { }
   public getRepo(userName: string, repoName: string): any {
     this.http.get(`https://api.github.com/repos/${userName}/${repoName}`)

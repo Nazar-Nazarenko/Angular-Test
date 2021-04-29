@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UserInterface} from '../user-interface';
 
 @Component({
   selector: 'app-commit',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./commit.component.scss']
 })
 export class CommitComponent implements OnInit {
-  @Input() commit: any;
+  @Input() commit: UserInterface | any;
   constructor() { }
 
   ngOnInit(): void {

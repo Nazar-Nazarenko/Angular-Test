@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {UserInterface} from '../user-interface';
 
 @Component({
   selector: 'app-repo',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./repo.component.scss']
 })
 export class RepoComponent implements OnInit {
-  @Input() repoPersonal: any;
+  @Input() repoPersonal: UserInterface | any;
   constructor() { }
 
   ngOnInit(): void {

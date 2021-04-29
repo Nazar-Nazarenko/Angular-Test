@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import {RepositoryService} from '../repository.service';
+import {UserInterface} from '../user-interface';
 
 @Component({
   selector: 'app-selected-repo',
@@ -8,8 +9,8 @@ import {RepositoryService} from '../repository.service';
   styleUrls: ['./selected-repo.component.scss']
 })
 export class SelectedRepoComponent implements OnInit {
-  public  userName: any;
-  public  repoName: any;
+  public  userName: UserInterface | any;
+  public  repoName: UserInterface | any;
   public commit = false;
   constructor(private activateRoute: ActivatedRoute, public repoService: RepositoryService) {
     this.userName = activateRoute.snapshot.params['userName'];

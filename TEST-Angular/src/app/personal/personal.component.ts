@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { UserInterface} from '../user-interface';
 
 @Component({
   selector: 'app-personal',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./personal.component.scss']
 })
 export class PersonalComponent implements OnInit {
-  @Input() card: any;
+  @Input() card: UserInterface | any;
   constructor() { }
 
   ngOnInit(): void {
