@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  .name {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 20px 0;
+    color: #586769;
+  }
+  .commit-info {
+    display: flex;
+    justify-content: space-between;
+    .name-wrap {
+      .branch {
+        margin-bottom: 15px;
+      }
+    }
+    .for-commit {
+      button {
+        outline: none;
+        border: 1px solid #d1d5da;
+        border-radius: 5px;
+        background: #28a745;
+        width: 120px;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        margin-right: 40px;
+        &:hover {
+          box-shadow: 0 0 15px 5px rgba(0,0,0,0.25);;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+  .commit-wrap {
+    display: flex;
+    justify-content: space-between;
+    .commits {
+      margin: 0 50px;
+    }
+  }
+  .for-button {
+    position: absolute;
+    right: 40px;
+    top: -150px;
+    button {
+      outline: none;
+      border: 1px solid #d1d5da;
+      border-radius: 5px;
+      background: #d1d5da;
+      width: 180px;
+      padding: 10px;
+      font-size: 16px;
+      &:hover {
+        box-shadow: 0 0 15px 5px rgba(0,0,0,0.25);;
+        transition: 300ms;
+      }
+    }
+  }
+}

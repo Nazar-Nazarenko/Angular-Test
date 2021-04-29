@@ -1,0 +1,23 @@
+.main {
+  background: #f6f8fa;
+  height: 100%;
+  font-family: sans-serif;
+  .container {
+    width: 1430px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 60px;
+    .wrap {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin: 20px;
+      }
+    }
+  }
+}
+

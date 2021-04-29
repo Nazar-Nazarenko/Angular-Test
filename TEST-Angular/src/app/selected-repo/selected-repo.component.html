@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="for-button">
+    <button routerLink="/home">Back</button>
+  </div>
+  <div class="commit-info">
+    <div class="name-wrap">
+      <div class="name">{{userName}}</div>
+      <div class="branch">{{repoName}}</div>
+    </div>
+    <div class="for-commit">
+      <button (click)="showCommits()">commits</button>
+    </div>
+  </div>
+  <div class="commit-wrap">
+    <div class="commits">
+      <app-info-repo *ngFor="let branch of repoService.repo.branches" [repository]="branch"></app-info-repo>
+    </div>
+    <div class="branches" *ngIf="commit">
+      <app-commit *ngFor="let commit of repoService.repo.commits" [commit]="commit"></app-commit>
+    </div>
+  </div>
+</div>

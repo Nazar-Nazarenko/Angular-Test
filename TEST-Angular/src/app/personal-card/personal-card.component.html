@@ -1,0 +1,25 @@
+<div class="container" *ngIf="cardService">
+  <div class="for-button">
+    <button routerLink="/home">Home</button>
+  </div>
+  <div class="wrapper">
+    <div class="avatar">
+      <img [src]="cardService.user.avatar_url" alt="avatar">
+    </div>
+    <div class="info">
+      <div class="login">
+        {{cardService.user.login}}
+      </div>
+      <div class="email">
+        {{cardService.user.email}}
+      </div>
+      <div class="name">
+        {{cardService.user.name}}
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-repo">
+    <app-repo class="repos" *ngFor="let repo of cardService.user.repos" [repoPersonal]="repo"></app-repo>
+  </div>
+
+</div>

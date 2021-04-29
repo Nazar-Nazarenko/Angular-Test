@@ -1,0 +1,14 @@
+<div *ngIf="commit" class="container">
+  <div class="wrapper">
+    <div class="branch">
+      <div class="image">
+        <img [src]="commit.author.avatar_url" alt="image">
+        <div class="wrap-info">
+          <div class="author">{{commit.author.login}}</div>
+          <div class="date">{{commit.commit.author.date | date:'medium'}}</div>
+        </div>
+      </div>
+      {{commit.commit.message}}</div>
+
+  </div>
+</div>

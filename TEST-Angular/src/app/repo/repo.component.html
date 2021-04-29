@@ -1,0 +1,8 @@
+<div *ngIf="repoPersonal" class="info">
+  <div class="login">
+    <span class="strong">Repo:</span>
+    <a [routerLink]="['/repo', repoPersonal.owner.login, repoPersonal.name]">
+      <span>{{repoPersonal.url}}</span>
+    </a>
+  </div>
+</div>

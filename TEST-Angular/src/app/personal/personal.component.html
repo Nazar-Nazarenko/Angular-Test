@@ -1,0 +1,19 @@
+<div class="container-item">
+  <a [routerLink]="['/user', card.login]">
+    <div *ngIf="card" class="info">
+      <div class="avatar">
+        <img [src]="card.avatar_url" alt="avatar">
+      </div>
+      <div class="link">
+        <div class="login">
+          <span class="strong">Login:</span>
+          <span>{{card.login}}</span>
+        </div>
+        <div class="ulr">
+          <span class="strong">url:</span>
+          <span>{{card.html_url}}</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
