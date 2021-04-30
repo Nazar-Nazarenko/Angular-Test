@@ -17,4 +17,6 @@ export interface UserInterface {
   commits: any;
   author: string;
   date: string;
+  public_repos: number;
+  followers: number;
 }

@@ -17,6 +17,22 @@
         {{cardService.user.name}}
       </div>
     </div>
+    <div class="numbers">
+      <div class="number-followers">
+        <img src="../../assets/images/user-1.png" alt="follower">
+        <span>Followers</span>
+        <div class="followers">
+          {{cardService.user.followers}}
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="number-repos">
+        <span>Public repos</span>
+        <div class="repos">
+          {{cardService.user.public_repos}}
+        </div>
+      </div>
+    </div>
   </div>
   <div class="wrapper-repo">
     <app-repo class="repos" *ngFor="let repo of cardService.user.repos" [repoPersonal]="repo"></app-repo>

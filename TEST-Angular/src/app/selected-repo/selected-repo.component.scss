@@ -9,9 +9,13 @@
   .commit-info {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #d1d5da;
+    margin-bottom: 20px;
     .name-wrap {
       .branch {
         margin-bottom: 15px;
+        color: #0366d6;
+        font-weight: lighter;
       }
     }
     .for-commit {

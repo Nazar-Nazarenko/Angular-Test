@@ -23,7 +23,7 @@ export class SelectedRepoComponent implements OnInit {
   }
   showCommits(): any {
     this.commit = !this.commit;
-    console.log("COMMITS ARE SHOWN!");
+    console.log('COMMITS ARE SHOWN!');
   }
 
 }

@@ -30,6 +30,10 @@
       .login {
         display: flex;
         justify-content: space-between;
+        color: #586769;
+        font-weight: lighter;
+        font-size: 16px;
+        text-transform: capitalize;
         span {
           padding: 10px;
         }
@@ -39,6 +43,9 @@
         justify-content: space-between;
         width: 22rem;
         margin: 0 20px;
+        font-weight: bold;
+        color: #005cc5;
+        font-size: 16px;
         span {
           padding: 10px;
         }
@@ -54,9 +61,7 @@
       }
       padding: 10px;
     }
-    .strong {
-      font-weight: bold;
-    }
+
 
   }
 }
